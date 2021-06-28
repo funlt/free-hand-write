@@ -11,4 +11,10 @@ public class TestController {
     public String test(){
         return "游离笔迹";
     }
+
+
+    @RequestMapping("/git")
+    public String git(){
+        return "游离笔迹git";
+    }
 }
