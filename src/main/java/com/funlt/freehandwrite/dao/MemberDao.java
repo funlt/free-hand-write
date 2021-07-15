@@ -10,4 +10,7 @@ public interface MemberDao {
 
     List<Member> selectMemberList();
 
+    Member selectMemberByEmail(String email);
+
+    void updateStatus(Member member);
 }

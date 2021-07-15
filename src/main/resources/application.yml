@@ -11,4 +11,23 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
 
+  mail:
+    host: smtp.qq.com
+    protocol: smtp
+    default-encoding: UTF-8
+    username: 347773103@qq.com
+    password: rfjxmubcftitcahi
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
+mail:
+  check:
+    key: shdkshhdjs235b2m
+
 

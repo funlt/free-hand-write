@@ -1,6 +1,7 @@
 package com.funlt.freehandwrite.domain;
 
 import java.time.LocalDateTime;
+import java.util.Set;
 
 public class Member {
 
@@ -19,6 +20,7 @@ public class Member {
     private LocalDateTime createTime;
     private LocalDateTime updateTime;
 
+    private Set<Role> roles;
 
     public String getId() {
         return id;
@@ -130,5 +132,13 @@ public class Member {
 
     public void setUpdateTime(LocalDateTime updateTime) {
         this.updateTime = updateTime;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }

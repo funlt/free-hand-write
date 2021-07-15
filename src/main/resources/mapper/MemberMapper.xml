@@ -8,7 +8,15 @@
         select * from member
     </select>
 
-    <insert id="addMember">
-        insert into member()
+    <select id="selectMemberByEmail" resultType="com.funlt.freehandwrite.domain.Member">
+        select * from member where email = #{email}
+    </select>
+
+    <insert id="addMember" parameterType="com.funlt.freehandwrite.domain.Member">
+        insert into member(id,username,password,email,status) values(#{id},#{username},#{password},#{email},#{status})
     </insert>
+
+    <update id="updateStatus" parameterType="com.funlt.freehandwrite.domain.Member">
+        update member set status = #{status} where id = #{id}
+    </update>
 </mapper>

@@ -1,10 +1,9 @@
 package com.funlt.freehandwrite.dto;
 
-public class RegisterDTO {
+public class LoginDTO {
 
-    private String username;
-    private String password;
     private String email;
+    private String password;
 
     public String getEmail() {
         return email;
@@ -12,14 +11,6 @@ public class RegisterDTO {
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 
     public String getPassword() {
